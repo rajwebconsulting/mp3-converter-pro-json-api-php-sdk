@@ -2,10 +2,10 @@
 
 ### [MP3 Converter Pro](https://shop.rajwebconsulting.com/store/converter-scripts) v3 JSON API SDK
 
-Install dependencies via Composer
+Install via Composer
 
 ```
-composer install
+composer require rajwebconsulting/json-api-sdk
 ```
 
 Init SDK
