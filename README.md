@@ -8,6 +8,14 @@ Install via Composer
 composer require rajwebconsulting/json-api-sdk
 ```
 
+Autoloader and use SDK
+```
+<?php
+use Rajwebconsulting\JsonApiSdk\App;
+
+require __DIR__ . '/../vendor/autoload.php';
+```
+
 Init SDK
 ```
 $app = new App();
