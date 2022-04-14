@@ -11,6 +11,7 @@
             "Rajwebconsulting\\": "test/"
         }
     },
+    "license": "MIT",
     "authors": [{
         "name": "Andre",
         "email": "andre@amail.ovh"
