@@ -13,7 +13,7 @@ Autoloader and use SDK
 <?php
 use Rajwebconsulting\JsonApiSdk\App;
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 ```
 
 Init SDK
