@@ -5,7 +5,7 @@ namespace Rajwebconsulting\JsonApiSdk;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
 
-require __DIR__.'/../vendor/autoload.php';
+// require __DIR__.'/../vendor/autoload.php';
 
 class App
 {
