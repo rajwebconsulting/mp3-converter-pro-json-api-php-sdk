@@ -1,19 +1,19 @@
 {
     "name": "rajwebconsulting/json-api-sdk",
     "description": "SDK for MP3 Converter Pro v3 JSON API",
+    "version": "1.0.2",
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^7.4"
     },
     "autoload": {
         "psr-4": {
-            "Rajwebconsulting\\JsonApiSdk\\": "src/",
-            "Rajwebconsulting\\": "test/"
+            "RajWebConsulting\\JsonSdk\\": "src/"
         }
     },
     "license": "MIT",
     "authors": [{
-        "name": "Andre",
+        "name": "Andre H.",
         "email": "andre@amail.ovh"
     }]
 }

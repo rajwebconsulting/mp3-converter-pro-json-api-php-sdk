@@ -1,11 +1,9 @@
 <?php
 
-namespace Rajwebconsulting\JsonApiSdk;
+namespace Rajwebconsulting\JsonSdk;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
-
-// require __DIR__.'/../vendor/autoload.php';
 
 class App
 {
@@ -13,12 +11,16 @@ class App
 
     public function __construct()
     {
-        $this->client = new Client();
+        $this->client = new Client([
+            'verify' => false,
+            'force_ip_resolve' => 'v4',
+        ]);
     }
 
     public function GenerateDownloadHash($api, $url, $ftype)
     {
-        $response = $this->client->post($api . '/api/json',
+        $response = $this->client->post(
+            $api . '/api/json',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -30,13 +32,13 @@ class App
                 ],
             ]
         );
-       $json = $response->getBody();
-       return json_decode($json, true);
+        return $response->getBody();
     }
 
     public function StartTask($api, $hash)
     {
-        $response = $this->client->post($api . '/api/json',
+        $response = $this->client->post(
+            $api . '/api/json',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -47,13 +49,13 @@ class App
                 ],
             ]
         );
-       $json = $response->getBody();
-       return json_decode($json, true);
+        return $response->getBody();
     }
 
     public function GetStatus($api, $taskId)
     {
-        $response = $this->client->post($api . '/api/json/task',
+        $response = $this->client->post(
+            $api . '/api/json/task',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -64,7 +66,6 @@ class App
                 ],
             ]
         );
-       $json = $response->getBody();
-       return json_decode($json, true);
+        return $response->getBody();
     }
 }
