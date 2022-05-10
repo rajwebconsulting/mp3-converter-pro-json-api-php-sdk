@@ -8,19 +8,28 @@ use GuzzleHttp\RequestOptions;
 class App
 {
     protected $client;
+    private $config;
 
-    public function __construct()
+    public function __construct(array $config)
     {
+        $this->config = $config;
         $this->client = new Client([
             'verify' => false,
             'force_ip_resolve' => 'v4',
         ]);
     }
 
-    public function GenerateDownloadHash($api, $url, $ftype)
+    /**
+     * Generate Download Hash
+     *
+     * @param string $url
+     * @param string $ftype
+     * @return array
+     */
+    public function GenerateDownloadHash($url, $ftype)
     {
         $response = $this->client->post(
-            $api . '/api/json',
+            $this->config['API_URL'] . '/api/json',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -32,13 +41,20 @@ class App
                 ],
             ]
         );
-        return $response->getBody();
+        $json = $response->getBody();
+        return json_decode($json, true);
     }
 
-    public function StartTask($api, $hash)
+    /**
+     * Start Convert process
+     *
+     * @param string $hash
+     * @return array
+     */
+    public function StartTask($hash)
     {
         $response = $this->client->post(
-            $api . '/api/json',
+            $this->config['API_URL'] . '/api/json',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -49,13 +65,20 @@ class App
                 ],
             ]
         );
-        return $response->getBody();
+        $json = $response->getBody();
+        return json_decode($json, true);
     }
 
-    public function GetStatus($api, $taskId)
+    /**
+     * Get Status update and download results
+     *
+     * @param string $taskId
+     * @return array
+     */
+    public function GetStatus($taskId)
     {
         $response = $this->client->post(
-            $api . '/api/json/task',
+            $this->config['API_URL'] . '/api/json/task',
             [
                 'headers' => [
                     'Content-Type' => 'application/json',
@@ -66,6 +89,7 @@ class App
                 ],
             ]
         );
-        return $response->getBody();
+        $json = $response->getBody();
+        return json_decode($json, true);
     }
 }

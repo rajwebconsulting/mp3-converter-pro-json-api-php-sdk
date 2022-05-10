@@ -1,15 +1,17 @@
 ## RajWebConsulting
 
-### [MP3 Converter Pro](https://shop.rajwebconsulting.com/store/converter-scripts) v3 JSON API SDK v1.0.2
+### [MP3 Converter Pro](https://shop.rajwebconsulting.com/store/converter-scripts) v3 JSON API SDK v1.0.3
 
-Install via Composer
+#### Installation
 
 ```
 composer require rajwebconsulting/json-api-sdk
 ```
 
+#### Usage
+
 Autoloader and use SDK
-```
+```php
 <?php
 use RajWebConsulting\JsonSdk\App;
 
@@ -17,23 +19,23 @@ require __DIR__ . '/vendor/autoload.php';
 ```
 
 Init SDK
-```
-$app = new App();
+```php
+$app = new App(['API_URL' => 'https://example.com']);;
 ```
 
 Generate Request HASH
-```
-$data = $app->GenerateDownloadHash('API_URL', 'VIDEO_URL', 'FILE_TYPE');
+```php
+$data = $app->GenerateDownloadHash('VIDEO_URL', 'FILE_TYPE');
 ```
 
 Start Conversion TASK
-```
-$data = $app->StartTask('API_URL', 'GENERATED_HASH');
+```php
+$data = $app->StartTask('GENERATED_HASH');
 ```
 
 Get Conversion Status & Download URL
 ```
-$output = $app->GetStatus('API_URL', 'TASK_ID');
+$output = $app->GetStatus('TASK_ID');
 ```
 
 Constants
