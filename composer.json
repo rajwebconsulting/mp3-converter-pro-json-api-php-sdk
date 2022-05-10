@@ -1,9 +1,10 @@
 {
     "name": "rajwebconsulting/json-api-sdk",
     "description": "SDK for MP3 Converter Pro v3 JSON API",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "type": "library",
     "require": {
+        "php": "^7.4|^8.0",
         "guzzlehttp/guzzle": "^7.4"
     },
     "autoload": {
