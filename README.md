@@ -4,7 +4,7 @@
 
 #### Installation
 
-```
+```bash
 composer require rajwebconsulting/json-api-sdk
 ```
 
@@ -34,7 +34,7 @@ $data = $app->StartTask('GENERATED_HASH');
 ```
 
 Get Conversion Status & Download URL
-```
+```php
 $output = $app->GetStatus('TASK_ID');
 ```
 
