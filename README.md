@@ -2,7 +2,7 @@
 
 ### [MP3 Converter Pro](https://shop.rajwebconsulting.com/store/converter-scripts) v3 JSON API SDK v1.0.3
 
-#### Installation
+#### Installation required PHP 7.4+
 
 ```bash
 composer require rajwebconsulting/json-api-sdk
