@@ -96,7 +96,7 @@ $output = $app->GetStatus('TASK_ID');
   'download_progress' => 0,
   'convert_progress' => 0,
   'title' => 'Goodknight. - Freedom [NCS Release]',
-  'ext' => 'mp4',
+  'ext' => 'mp4'
 ]
 ```
 ```
@@ -106,7 +106,7 @@ $output = $app->GetStatus('TASK_ID');
   'download_progress' => 56,
   'convert_progress' => 0,
   'title' => 'Goodknight. - Freedom [NCS Release]',
-  'ext' => 'mp4',
+  'ext' => 'mp4'
 ]
 ```
 ```
@@ -117,6 +117,6 @@ $output = $app->GetStatus('TASK_ID');
   'convert_progress' => 100,
   'title' => 'Goodknight. - Freedom [NCS Release]',
   'ext' => 'mp4',
-  'download' => 'https://demo.apiyoutu.be/dl?hash=5caXl%2FQypcgVkNVVq%2F2qx2SO4Jr7Gp0HA3V6%2F9Ejz4sMeJmhho56KdsFlNWbXsA2%2B%2FUXHMauLc0F1xhRlydp7WaPz8Q33cCNXmlqZeK9QlPwHLEzT9BPz%2FQi9cQH7Rpo7XoO8f9tJsTV%2BoQGf1teMFVSQzb2evRaAQWqHEmNCWsDPi0IA2b9jxi46mEXZgxYGlh%2BcJDpP2UGPqu96CbbJhAe96bPHUiADXL22t5wLN0%3D',
+  'download' => 'https://demo.apiyoutu.be/dl?hash=5caXl%2FQypcgVkNVVq%2F2qx2SO4Jr7Gp0HA3V6%2F9Ejz4sMeJmhho56KdsFlNWbXsA2%2B%2FUXHMauLc0F1xhRlydp7WaPz8Q33cCNXmlqZeK9QlPwHLEzT9BPz%2FQi9cQH7Rpo7XoO8f9tJsTV%2BoQGf1teMFVSQzb2evRaAQWqHEmNCWsDPi0IA2b9jxi46mEXZgxYGlh%2BcJDpP2UGPqu96CbbJhAe96bPHUiADXL22t5wLN0%3D'
 ]
 ```
