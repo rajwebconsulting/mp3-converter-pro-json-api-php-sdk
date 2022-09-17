@@ -53,7 +53,7 @@ $output = $app->GetStatus('TASK_ID');
 
 - VIDEO_URL = `Any Video/Audio Page URL from a Supported site like YouTube`
 
-- FILE_TYPE = `MP3 or MP4`
+- FILE_TYPE = `mp3 or mp4`
 
 - GENERATED_HASH = `GENERATED HASH returned in the GenerateDownloadHash() API response`
 
