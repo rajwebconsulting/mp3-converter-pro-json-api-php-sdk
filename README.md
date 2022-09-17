@@ -47,7 +47,7 @@ Get Conversion Status & Download URL:
 $output = $app->GetStatus('TASK_ID');
 ```
 
-## Reference of SDK Constants
+## Reference of Special Terms
 
 - API_URL = `URL of your MP3 Converter Pro installation`
 
