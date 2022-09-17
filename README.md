@@ -33,9 +33,9 @@ $app = new App(['API_URL' => 'https://myconvertersite.com']);
 ```
 
 #### 3.) Generate Download Hash value(s) for available video/audio qualities:
-> **VIDEO_URL** = Any Video/Audio Page URL from a Supported site like YouTube
+> `VIDEO_URL` = Any Video/Audio Page URL from a Supported site like YouTube
 >
-> **FILE_TYPE** = mp3 or mp4
+> `FILE_TYPE` = mp3 or mp4
 ```php
 $data = $app->GenerateDownloadHash('VIDEO_URL', 'FILE_TYPE');
 ```
@@ -72,7 +72,7 @@ $data = $app->GenerateDownloadHash('VIDEO_URL', 'FILE_TYPE');
 ```
 
 #### 4.) Start Conversion TASK by passing the desired Download Hash value from previous API response:
->**GENERATED_HASH** = A Download Hash value returned by the SDK's GenerateDownloadHash() method
+>`GENERATED_HASH` = A Download Hash value returned by the SDK's GenerateDownloadHash() method
 ```php
 $data = $app->StartTask('GENERATED_HASH');
 ```
@@ -84,7 +84,7 @@ $data = $app->StartTask('GENERATED_HASH');
 ```
 
 #### 5.) Get Conversion Status & Download URL by REGULARLY and REPEATEDLY polling this SDK method:
->**TASK_ID** = TASK ID number returned by the SDK's StartTask() method
+>`TASK_ID` = TASK ID number returned by the SDK's StartTask() method
 ```php
 $output = $app->GetStatus('TASK_ID');
 ```
