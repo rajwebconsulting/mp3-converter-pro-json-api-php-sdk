@@ -1,5 +1,7 @@
 ### PHP SDK and wrapper for [MP3 Converter Pro](https://demo.apiyoutu.be) [JSON API](https://demo.apiyoutu.be/developers) - Brought to you by [RAJ Web Consulting](https://rajwebconsulting.com)
 
+![GitHub top language](https://img.shields.io/github/languages/top/rajwebconsulting/mp3-converter-pro-json-api-php-sdk) ![GitHub language count](https://img.shields.io/github/languages/count/rajwebconsulting/mp3-converter-pro-json-api-php-sdk) ![GitHub issues](https://img.shields.io/github/issues/rajwebconsulting/mp3-converter-pro-json-api-php-sdk)
+
 The SDK and API support downloads/conversions from **YouTube, TikTok, Facebook, Instagram, Twitter, SoundCloud, Vimeo, Dailymotion, VK,** and **AOL** -- 10 of the largest video/audio hosting sites in the world!
 
 ## Requirements
